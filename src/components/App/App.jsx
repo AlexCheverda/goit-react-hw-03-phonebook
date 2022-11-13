@@ -1,10 +1,12 @@
 import { Component } from 'react';
 import { nanoid } from 'nanoid';
-import css from './App.module.css';
+// import css from './App.module.css';
 
 import ContactForm from 'components/ContactForm';
 import Filter from 'components/Filter';
 import ContactList from 'components/ContactList';
+
+import { Title, SectionName, Container } from './App.styled';
 
 class App extends Component {
   state = {
@@ -16,6 +18,20 @@ class App extends Component {
     ],
     filter: '',
   };
+
+  componentDidUpdate(_, prevState) {
+    if (this.state.contacts !== prevState.contacts) {
+      localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
+    }
+  }
+
+  componentDidMount() {
+    const contacts = localStorage.getItem('contacts');
+    if (contacts) {
+      const parsedContacts = JSON.parse(contacts);
+      this.setState({ contacts: parsedContacts });
+    }
+  }
 
   addContact = ({ name, number }) => {
     const { contacts } = this.state;
