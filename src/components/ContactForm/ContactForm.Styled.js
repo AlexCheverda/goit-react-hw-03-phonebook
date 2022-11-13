@@ -1,4 +1,6 @@
-.form {
+import styled from 'styled-components';
+
+export const Form = styled.form`
     min-width: 300px;
     display: flex;
     flex-direction: column;
@@ -8,22 +10,22 @@
     padding: 30px 40px;
     font-size: 20px;
     background-color: rgb(11, 194, 250);
-}
+`;
 
-input {
+export const Input = styled.input`
     padding: 12px;
     outline: none;
     border: 1px solid rgb(19, 86, 209);
     border-radius: 15px;
-}
+`;
 
-h2 {
+export const Label = styled.label`
     margin: 0;
     padding: 20px;
     font-size: 30px;
-}
+`;
 
-.formBtn {
+export const FormBtn = styled.button`
     padding: 10px 20px;
     border: none;
     border-radius: 15px;
@@ -31,9 +33,10 @@ h2 {
     color: rgb(6, 58, 58);
     background-color: #f8e806;
     transition: background-color 250ms linear, color 250ms linear;
-}
 
-.formBtn:hover {
-    background-color: rgb(247, 147, 16);
-    color: #fff;
-}
+    &:hover {
+        background-color: rgb(247, 147, 16);
+        color: #fff;
+    }
+`;
+

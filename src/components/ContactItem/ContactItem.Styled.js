@@ -1,4 +1,6 @@
-.contactsItem {
+import styled from 'styled-components';
+
+export const Item = styled.li`
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,13 +13,12 @@
     background-color: #fff;
 
     transition: transform 250ms linear;
-}
-
-.contactsItem:hover {
+    &:hover {
     transform: scale(1.1);
 }
+`;
 
-.contactBtn {
+export const Btn = styled.button`
     padding: 2px 12px;
     border: none;
     border-radius: 15px;
@@ -25,9 +26,8 @@
     color: rgb(6, 58, 58);
     background-color: #f8e806;
     transition: background-color 250ms linear, color 250ms linear;
-}
-
-.contactBtn:hover {
-    background-color: rgb(247, 147, 16);
-    color: #fff;
-}
+    &:hover {
+        background-color: rgb(247, 147, 16);
+        color: #fff;
+    }
+`;

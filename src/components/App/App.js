@@ -6,7 +6,7 @@ import ContactForm from 'components/ContactForm';
 import Filter from 'components/Filter';
 import ContactList from 'components/ContactList';
 
-import { Title, SectionName, Container } from './App.styled';
+import { Title, SectionName, Container } from './App.Styled';
 
 class App extends Component {
   state = {
