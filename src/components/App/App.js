@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import { nanoid } from 'nanoid';
-// import css from './App.module.css';
 
 import ContactForm from 'components/ContactForm';
 import Filter from 'components/Filter';
@@ -55,8 +54,8 @@ class App extends Component {
     }));
   };
 
-  changeFilter = event => {
-    this.setState({ filter: event.currentTarget.value });
+  changeFilter = evt => {
+    this.setState({ filter: evt.currentTarget.value });
   };
 
   getVisibleContacts = () => {

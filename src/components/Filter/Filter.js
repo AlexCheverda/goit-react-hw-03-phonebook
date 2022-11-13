@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
-import css from './Filter.module.css';
+import { FilterBox, Label, Input } from './Filter.Styled';
 
 const Filter = ({ filter, onFilterSearch }) => {
     return (
-        <div className={css.filter}>
-            <label>Find contacts by name</label>
-            <input
+        <FilterBox>
+            <Label>Find contacts by name</Label>
+            <Input
                 type="text"
                 name="filter"
                 value={filter}
@@ -14,7 +14,7 @@ const Filter = ({ filter, onFilterSearch }) => {
                 required
                 onChange={onFilterSearch}
             />
-        </div>
+        </FilterBox>
     );
 }
 

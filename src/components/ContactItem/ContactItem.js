@@ -1,10 +1,9 @@
-// import css from './ContactItem.module.css';
 import PropTypes from 'prop-types';
 import { Item, Btn } from './ContactItem.Styled';
 
 
-const ContactItem = ({ contacts, onDeleteContact }) => {
-  const { id, name, number } = contacts;
+const ContactItem = ({ contact, onDeleteContact }) => {
+  const { name, number, id } = contact;
       return (
         <Item>
           <span>

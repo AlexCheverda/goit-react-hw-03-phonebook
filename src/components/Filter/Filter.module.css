@@ -1,8 +1,0 @@
-.filter {
-    display: flex;
-    flex-direction: column;
-    min-width: 300px;
-    row-gap: 20px;
-    padding: 10px 40px;
-    font-size: 20px;
-}

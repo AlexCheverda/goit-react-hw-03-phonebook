@@ -1,19 +1,5 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 30px;
-    color: rgb(6, 58, 58);
-    background-color: #f8e806;
-`;
-
 export const Title = styled.h1`
     margin: 0;
     padding: 20px;
@@ -37,4 +23,18 @@ export const SectionName = styled.h2`
     margin: 0;
     padding: 20px;
     font-size: 30px;
+`;
+
+export const Container = styled.div`
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    color: rgb(6, 58, 58);
+    background-color: #f8e806;
 `;
